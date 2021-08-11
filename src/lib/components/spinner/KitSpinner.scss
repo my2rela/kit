@@ -1,0 +1,9 @@
+.kit-spinner {
+  display: none;
+
+  &.kit-spinner__show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
