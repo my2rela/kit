@@ -54,5 +54,13 @@
       "@babel/proposal-object-rest-spread",
       "@babel/plugin-proposal-optional-chaining"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.tchi-rubick:my2rela/kit.git"
+  },
+  "author": "tchirubick <tchi.devica@gmail.com>",
+  "license": "ISC"
 }
