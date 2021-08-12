@@ -1,0 +1,28 @@
+@import '../style.scss';
+
+.kit-button {
+  display: block;
+  width: 100%;
+
+  button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $color-main;
+    border: none;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+
+    &:active {
+      background-color: $color-main-light;
+    }
+
+    &:disabled {
+      background-color: $color-main-light;
+      cursor: not-allowed;
+    }
+  }
+}
