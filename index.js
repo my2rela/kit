@@ -56,7 +56,7 @@ var _KitTextField = _interopRequireDefault(require("./components/inputs/textFiel
 
 var _KitPagination = _interopRequireDefault(require("./components/pagination/KitPagination"));
 
-var _KitSpinner = _interopRequireDefault(require("./components/container/KitSpinner"));
+var _KitSpinner = _interopRequireDefault(require("./components/spinner/KitSpinner"));
 
 var _KitTheme = _interopRequireDefault(require("./components/KitTheme"));
 

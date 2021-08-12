@@ -3,7 +3,7 @@ import KitButton from './components/buttons/KitButton';
 import KitContainer from './components/container/KitContainer';
 import KitTextField from './components/inputs/textField/KitTextField';
 import KitPagination from './components/pagination/KitPagination';
-import KitSpinner from './components/container/KitSpinner';
+import KitSpinner from './components/spinner/KitSpinner';
 import KitTheme from './components/KitTheme';
 
 export {
