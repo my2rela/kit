@@ -11,7 +11,7 @@ var _styles = require("@material-ui/core/styles");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var theme = (0, _styles.createMuiTheme)({
+var theme = (0, _styles.createTheme)({
   palette: {
     primary: {
       main: '#542574e0'

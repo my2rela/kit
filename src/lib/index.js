@@ -5,6 +5,7 @@ import KitTextField from './components/inputs/textField/KitTextField';
 import KitPagination from './components/pagination/KitPagination';
 import KitSpinner from './components/spinner/KitSpinner';
 import KitTheme from './components/KitTheme';
+import KitSelectField from './components/inputs/selectField/KitSelectField';
 
 export {
   KitAlert,
@@ -14,4 +15,5 @@ export {
   KitPagination,
   KitSpinner,
   KitTheme,
+  KitSelectField,
 };

@@ -45,6 +45,12 @@ Object.defineProperty(exports, "KitTheme", {
     return _KitTheme.default;
   }
 });
+Object.defineProperty(exports, "KitSelectField", {
+  enumerable: true,
+  get: function get() {
+    return _KitSelectField.default;
+  }
+});
 
 var _KitAlert = _interopRequireDefault(require("./components/alert/KitAlert"));
 
@@ -59,5 +65,7 @@ var _KitPagination = _interopRequireDefault(require("./components/pagination/Kit
 var _KitSpinner = _interopRequireDefault(require("./components/spinner/KitSpinner"));
 
 var _KitTheme = _interopRequireDefault(require("./components/KitTheme"));
+
+var _KitSelectField = _interopRequireDefault(require("./components/inputs/selectField/KitSelectField"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
