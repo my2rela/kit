@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useMinimalSelectStyles } from '@mui-treasury/styles/select/minimal';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -8,14 +8,13 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 // Original design here: https://github.com/siriwatknp/mui-treasury/issues/540
 
 const KitSelectField = (props) => {
-  const { options, onChange } = props;
-  const [val, setVal] = useState(null);
-
-  useEffect(() => {
-    if (options[0]) {
-      setVal(options[0].value);
-    }
-  }, []);
+  const {
+    options,
+    onChange,
+    label,
+    value,
+  } = props;
+  const [val, setVal] = useState(value);
 
   const handleChange = (event) => {
     setVal(event.target.value);
@@ -49,8 +48,17 @@ const KitSelectField = (props) => {
     <MenuItem value={option.value}>{option.text}</MenuItem>
   ));
 
+  const renderLabel = () => {
+    if (!label) {
+      return null;
+    }
+
+    return <span className="kit-input-textfield__label">{label}:</span>;
+  };
+
   return (
     <FormControl>
+      {renderLabel()}
       <Select
         disableUnderline
         classes={{ root: minimalSelectClasses.select }}

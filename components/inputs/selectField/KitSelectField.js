@@ -40,18 +40,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 // Original design here: https://github.com/siriwatknp/mui-treasury/issues/540
 var KitSelectField = function KitSelectField(props) {
   var options = props.options,
-      onChange = props.onChange;
+      onChange = props.onChange,
+      label = props.label,
+      value = props.value;
 
-  var _useState = (0, _react.useState)(null),
+  var _useState = (0, _react.useState)(value),
       _useState2 = _slicedToArray(_useState, 2),
       val = _useState2[0],
       setVal = _useState2[1];
-
-  (0, _react.useEffect)(function () {
-    if (options[0]) {
-      setVal(options[0].value);
-    }
-  }, []);
 
   var handleChange = function handleChange(event) {
     setVal(event.target.value);
@@ -91,7 +87,17 @@ var KitSelectField = function KitSelectField(props) {
     });
   };
 
-  return /*#__PURE__*/_react.default.createElement(_FormControl.default, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  var renderLabel = function renderLabel() {
+    if (!label) {
+      return null;
+    }
+
+    return /*#__PURE__*/_react.default.createElement("span", {
+      className: "kit-input-textfield__label"
+    }, label, ":");
+  };
+
+  return /*#__PURE__*/_react.default.createElement(_FormControl.default, null, renderLabel(), /*#__PURE__*/_react.default.createElement(_Select.default, {
     disableUnderline: true,
     classes: {
       root: minimalSelectClasses.select
