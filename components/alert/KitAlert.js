@@ -34,7 +34,7 @@ var KitAlert = function KitAlert(props) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "kit-alert"
   }, /*#__PURE__*/_react.default.createElement(_Snackbar.default, {
-    open: isOpen,
+    open: !!isOpen,
     autoHideDuration: 6000,
     onClose: onClose,
     TransitionComponent: slideTransition

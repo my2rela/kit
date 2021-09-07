@@ -19,7 +19,7 @@ const KitAlert = (props) => {
   return (
     <div className="kit-alert">
       <Snackbar
-        open={isOpen}
+        open={!!isOpen}
         autoHideDuration={6000}
         onClose={onClose}
         TransitionComponent={slideTransition}
