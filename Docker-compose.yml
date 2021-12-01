@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  kit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kit
+    hostname: kit
+    tty: true
+    restart: unless-stopped
+    volumes:
+      - ./:/usr/src/app
+      - ./node_modules:/usr/src/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - "3001:3001"
+    stdin_open: true

@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "babel src/lib -d . --copy-files"
+    "lint": "npx eslint 'src/**/*.{js,jsx}'",
+    "prepare:publish": "babel src/kit -d . --copy-files"
   },
   "eslintConfig": {
     "extends": [

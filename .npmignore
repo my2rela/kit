@@ -96,3 +96,9 @@ yarn-error.log*
 
 # publish
 /components
+/public
+/src
+/.github
+Docker-compose.yml
+Dockerfile
+.eslintrc.json
