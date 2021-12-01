@@ -95,7 +95,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # publish
-/components
 /public
 /src
 /.github
