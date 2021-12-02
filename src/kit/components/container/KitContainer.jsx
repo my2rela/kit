@@ -2,10 +2,10 @@ import React from 'react';
 import './KitContainer.scss';
 
 const KitContainer = (props) => {
-  const { children, className } = props;
+  const { children } = props;
 
   return (
-    <div className={`kit-container ${className ?? ''}`}>
+    <div className="kit-container" {...props}>
       {children}
     </div>
   );
